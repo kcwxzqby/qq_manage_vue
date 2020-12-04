@@ -1,2 +1,2 @@
-## renren-fast-vue
+## qq_manage_vue
 QQ管理后台Vue
