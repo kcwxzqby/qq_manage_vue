@@ -5,7 +5,8 @@
   window.SITE_CONFIG = {};
 
   // api接口请求地址
-  window.SITE_CONFIG['baseUrl'] = 'http://127.0.0.1:8088/';
+  // http://127.0.0.1:8088/
+  window.SITE_CONFIG['baseUrl'] = 'http://ikechuang.top/qq/api';
 
   // cdn地址 = 域名 + 版本号
   window.SITE_CONFIG['domain']  = './'; // 域名

@@ -18,7 +18,7 @@
     </el-form-item>
     <el-form-item label="自动回复" prop="replyList">
       <el-checkbox-group v-model="dataForm.replyList">
-        <el-checkbox :label="data" :indeterminate="(dataForm.replyList.filter(o=>o.replyId == data.replyId).length>0)" v-for="data in dataForm.allReplyList">{{data.replyName}}</el-checkbox>
+        <el-checkbox :label="data" :indeterminate="(dataForm.replyList.filter(o=>(o != null ? o.replyId : -1) == data.replyId).length>0)" v-for="data in dataForm.allReplyList">{{data.replyName}}</el-checkbox>
       </el-checkbox-group>
     </el-form-item>
     <el-form-item label="是否启动" prop="enable">
